@@ -1,38 +1,59 @@
 import React, { Component } from "react";
 import Clickable from "../Clickable";
 
-import clicks from "../../clicks.json";
+import API from "../../utils/API";
 
 class ClickContainer extends Component {
   state = {
-    clickables: clicks
+    pictures: [],
+    clickables: []
   };
 
-  generateRows() {
-    let content = [];
-    this.state.clickables.forEach((c, i) => {
-      content.push(
-        <Clickable
-          img={c.img}
-          alt={c.alt}
-          key={i}
-          increaseScore={this.props.increaseScore}
-          resetScore={this.props.resetScore}
-          setMessage={this.props.setMessage}
-        />
-      );
-      if ((i + 1) % 5 === 0) {
-        content.push(<div className="w-100" key={i + 100}></div>);
-      }
-    });
-
-    return content;
+  componentDidMount() {
+    this.getPictures();
   }
+
+  getPictures() {
+    API.search().then(response => {
+      console.log(response);
+      this.setState({ pictures: response.data });
+    });
+  }
+
+  shuffle() {}
 
   render() {
     return (
       <div className="container">
-        <div className="row">{this.generateRows()}</div>
+        <div className="row">
+          {this.state.pictures.map((d, i) => {
+            console.log(d);
+            if ((i + 1) % 5 === 0) {
+              return (
+                <>
+                  <Clickable
+                    img={d.urls.raw}
+                    key={d.id}
+                    increaseScore={this.props.increaseScore}
+                    resetScore={this.props.resetScore}
+                    setMessage={this.props.setMessage}
+                  />
+                  <div className="w-100" key={i}></div>
+                </>
+              );
+            } else {
+              return (
+                <Clickable
+                  img={d.urls.raw}
+                  key={d.id}
+                  increaseScore={this.props.increaseScore}
+                  resetScore={this.props.resetScore}
+                  setMessage={this.props.setMessage}
+                />
+              );
+            }
+          })}
+        </div>
       </div>
     );
   }
