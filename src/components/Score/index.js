@@ -1,18 +1,22 @@
 import React, { Component } from "react";
 
-class Score extends Component {
-  state = {
-    score: 0,
-    message: false
-  };
+import "./index.css"
 
-  
+class Score extends Component {
+  updateScoreMessage() {
+    this.guessMessage("correct");
+    this.props.message = "correct";
+  }
 
   render() {
     return (
       <>
-        <li className="nav-item message">Make a click</li>
-        <li className="nav-item">Your score: {this.state.score}</li>
+        <li className={`nav-item message ${this.props.message}`} >
+          {this.props.message
+            ? this.props.message === "correct" ? "That's right!" : "You've already clicked that one"
+            : "Click an image below"}
+        </li>
+        <li className="nav-item">Your score: {this.props.score}</li>
       </>
     );
   }

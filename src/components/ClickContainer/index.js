@@ -11,9 +11,18 @@ class ClickContainer extends Component {
   generateRows() {
     let content = [];
     this.state.clickables.forEach((c, i) => {
-      content.push(<Clickable img={c.img} alt={c.alt} />);
-      if ((i + 1) % 4 === 0) {
-        content.push(<div className="w-100"></div>);
+      content.push(
+        <Clickable
+          img={c.img}
+          alt={c.alt}
+          key={i}
+          increaseScore={this.props.increaseScore}
+          resetScore={this.props.resetScore}
+          setMessage={this.props.setMessage}
+        />
+      );
+      if ((i + 1) % 5 === 0) {
+        content.push(<div className="w-100" key={i + 100}></div>);
       }
     });
 
