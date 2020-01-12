@@ -1,14 +1,10 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Banner from "./components/Banner";
-import ClickContainer from "./components/ClickContainer";
+import Wrapper from "./components/Wrapper"
 
 function App() {
   return (
     <>
-      <Nav />
-      <Banner />
-      <ClickContainer />
+      <Wrapper />
     </>
   );
 }
