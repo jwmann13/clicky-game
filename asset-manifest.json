@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad1bd3fa.chunk.css",
-    "main.js": "/static/js/main.2443eb0a.chunk.js",
-    "main.js.map": "/static/js/main.2443eb0a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.35061daf.js",
-    "runtime-main.js.map": "/static/js/runtime-main.35061daf.js.map",
-    "static/js/2.54330a7b.chunk.js": "/static/js/2.54330a7b.chunk.js",
-    "static/js/2.54330a7b.chunk.js.map": "/static/js/2.54330a7b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b487c517619e3953d76f50b8a8856e54.js": "/precache-manifest.b487c517619e3953d76f50b8a8856e54.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.ad1bd3fa.chunk.css.map": "/static/css/main.ad1bd3fa.chunk.css.map",
-    "static/js/2.54330a7b.chunk.js.LICENSE": "/static/js/2.54330a7b.chunk.js.LICENSE"
+    "main.css": "/clicky-game/static/css/main.ad1bd3fa.chunk.css",
+    "main.js": "/clicky-game/static/js/main.d456eab2.chunk.js",
+    "main.js.map": "/clicky-game/static/js/main.d456eab2.chunk.js.map",
+    "runtime-main.js": "/clicky-game/static/js/runtime-main.c289e6cb.js",
+    "runtime-main.js.map": "/clicky-game/static/js/runtime-main.c289e6cb.js.map",
+    "static/js/2.54330a7b.chunk.js": "/clicky-game/static/js/2.54330a7b.chunk.js",
+    "static/js/2.54330a7b.chunk.js.map": "/clicky-game/static/js/2.54330a7b.chunk.js.map",
+    "index.html": "/clicky-game/index.html",
+    "precache-manifest.3426436d716de3902ec39f57473d09bc.js": "/clicky-game/precache-manifest.3426436d716de3902ec39f57473d09bc.js",
+    "service-worker.js": "/clicky-game/service-worker.js",
+    "static/css/main.ad1bd3fa.chunk.css.map": "/clicky-game/static/css/main.ad1bd3fa.chunk.css.map",
+    "static/js/2.54330a7b.chunk.js.LICENSE": "/clicky-game/static/js/2.54330a7b.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.35061daf.js",
+    "static/js/runtime-main.c289e6cb.js",
     "static/js/2.54330a7b.chunk.js",
     "static/css/main.ad1bd3fa.chunk.css",
-    "static/js/main.2443eb0a.chunk.js"
+    "static/js/main.d456eab2.chunk.js"
   ]
 }
