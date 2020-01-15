@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "jwmann13.github.io/clicky-game/static/css/main.ad1bd3fa.chunk.css",
+    "main.js": "jwmann13.github.io/clicky-game/static/js/main.7cc00a0a.chunk.js",
+    "main.js.map": "jwmann13.github.io/clicky-game/static/js/main.7cc00a0a.chunk.js.map",
+    "runtime-main.js": "jwmann13.github.io/clicky-game/static/js/runtime-main.875ac68a.js",
+    "runtime-main.js.map": "jwmann13.github.io/clicky-game/static/js/runtime-main.875ac68a.js.map",
+    "static/js/2.54330a7b.chunk.js": "jwmann13.github.io/clicky-game/static/js/2.54330a7b.chunk.js",
+    "static/js/2.54330a7b.chunk.js.map": "jwmann13.github.io/clicky-game/static/js/2.54330a7b.chunk.js.map",
+    "index.html": "jwmann13.github.io/clicky-game/index.html",
+    "precache-manifest.588820067047df9532b435e19be66071.js": "jwmann13.github.io/clicky-game/precache-manifest.588820067047df9532b435e19be66071.js",
+    "service-worker.js": "jwmann13.github.io/clicky-game/service-worker.js",
+    "static/css/main.ad1bd3fa.chunk.css.map": "jwmann13.github.io/clicky-game/static/css/main.ad1bd3fa.chunk.css.map",
+    "static/js/2.54330a7b.chunk.js.LICENSE": "jwmann13.github.io/clicky-game/static/js/2.54330a7b.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.875ac68a.js",
+    "static/js/2.54330a7b.chunk.js",
+    "static/css/main.ad1bd3fa.chunk.css",
+    "static/js/main.7cc00a0a.chunk.js"
+  ]
+}
