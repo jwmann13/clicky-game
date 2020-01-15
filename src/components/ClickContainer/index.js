@@ -6,7 +6,6 @@ import clicks from "../../utils/clicks.json";
 
 class ClickContainer extends Component {
   state = {
-    pictures: clicks,
     clickables: []
   };
 
