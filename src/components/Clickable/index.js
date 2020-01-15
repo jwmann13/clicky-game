@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import "./index.css";
 
 class Clickable extends Component {
+
   state = {
     clicked: false
   }
 
   click = () => {
-    this.props.registerClick(this.props.id);
     if (!this.state.clicked) {
       this.setState({ clicked: true })
       this.props.increaseScore();
@@ -25,8 +25,7 @@ class Clickable extends Component {
           key={this.props.id}
           className="btn col"
           onClick={this.click}
-          data-sclicked={this.state.clicked}
-          data-pclicked={this.props.clicked}
+          data-clicked={this.state.clicked}
         >
           <img src={this.props.img} alt={this.props.alt} />
         </button>

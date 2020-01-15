@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import Clickable from "../Clickable";
 
 import API from "../../utils/API";
-
-import clicks from "../../clicks.json";
+import clicks from "../../utils/clicks.json";
 
 class ClickContainer extends Component {
   state = {
-    pictures: [],
+    pictures: clicks,
     clickables: []
   };
 
@@ -23,7 +22,7 @@ class ClickContainer extends Component {
     const clickables = pics.map((d, i) => {
       return (
         <Clickable
-          key={d.id}
+          key={d.key}
           img={d.img}
           id={d.key}
           clicked={d.clicked}
@@ -91,40 +90,12 @@ class ClickContainer extends Component {
   shuffleClickables() {
     let shuffledClicks = this.shuffle(this.state.clickables);
     this.setState({
-      pictures: shuffledClicks
+      clickables: shuffledClicks
     });
   }
-
-  resetClicks() {
-    this.setState(state => {
-      return {
-        pictures: state.pictures.map(pic => {
-          return {
-            key: pic.key,
-            img: pic.img,
-            clicked: false
-          };
-        })
-      };
-    });
-  }
-
-  registerClick(key) {
-    let clicked = this.state.pictures.filter(pic => pic.key === key);
-    console.log(key, clicked);
-  }
-
-  resetScore = () => {
-    this.props.resetScore();
-    this.resetClicks();
-  };
-
-  increaseScore = () => {
-    this.props.increaseScore();
-  };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
 
     return (
       <div className="container">
