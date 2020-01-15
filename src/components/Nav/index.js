@@ -9,7 +9,7 @@ class Nav extends Component {
       <>
         <nav className="navbar navbar-dark d-block sticky-top" id="header">
           <ul className="navbar-nav d-flex justify-content-between flex-row">
-            <li className="nav-item">Clickyman</li>
+            <li key="1" className="nav-item">Clickyman</li>
             <Score score={this.props.score} message={this.props.message}/>
           </ul>
         </nav>

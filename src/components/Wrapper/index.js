@@ -29,7 +29,7 @@ class Wrapper extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Nav
           score={this.state.score}
           message={this.state.message}
@@ -40,7 +40,7 @@ class Wrapper extends Component {
           resetScore={() => this.resetScore()}
           setMessage={(msg) => this.setMessage(msg)}
         />
-      </div>
+      </>
     );
   }
 }
